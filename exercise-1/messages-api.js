@@ -9,7 +9,7 @@ app.listen(port, () => console.log(`app running on port ${port}`));
 app.use(parserMiddleware);
 
 let requestCounter = 0;
-const requestLimit = 5;
+const requestLimit = 3;
 
 app.post('/messages', (req, res) => {
   const text = req.body.text;
